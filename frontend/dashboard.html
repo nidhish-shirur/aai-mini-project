@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Dashboard — Triage Agent</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>📋 Doctor Dashboard</h1>
+    <div class="sub">Triage cases, red flags & population trends</div>
+  </div>
+  <nav><a href="/">← Back to Chat</a></nav>
+</header>
+
+<div class="container" style="max-width: 980px;">
+  <div class="stats-row" id="stats"></div>
+
+  <h3 style="margin-bottom:8px;">Recent Triage Sessions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th><th>Patient</th><th>Age</th><th>Chief complaint</th>
+        <th>Urgency</th><th>Escalate?</th>
+      </tr>
+    </thead>
+    <tbody id="sessionRows"></tbody>
+  </table>
+
+  <div class="detail-panel" id="detailPanel"></div>
+</div>
+
+<script src="/static/dashboard.js"></script>
+</body>
+</html>
